@@ -1,0 +1,75 @@
+doctype html
+html(lang="es")
+	include ./inc/head
+	body(class='theme-light')
+		include ./inc/header
+
+		main(class='section home' id='home')
+			div(class='home__content')
+				div(class='home__slider')
+					img(class='home__image' src="./assets/images/home-image.png" alt="hero-image" loading='lazy')
+
+				div(class='home__info')
+					p(class='display-1') Forma parte del cambio con tlali
+					p Somos una organización social que promueve el desarrollo social , cultural y sostenible.
+
+		section(class='section about' id='about')
+
+			h2 Nosotros
+			div(class='about__text')
+				p Queremos ser la primera organización juvenil que busque la inclusión y participación de todas y todos sin importar sus capacidades.
+
+				p Cualquier persona puede colaborar con nosotros mediante las actividades organizadas por nuestros distintos departamentos.
+
+			p Únete a nosotros y sé parte del cambio que necesitamos. Juntos, podemos construir un mejor futuro para todos. Visita nuestras redes sociales y participa en las actividades que organizamos. ¡Gracias por apoyar a Tlali!.
+
+			include ./inc/social
+			h3 Directores
+			article(class='profiles')
+				div(class='profile')
+					div(class='profile__image')
+						img(src="./assets/icons/favicon-transparent.png", alt="" loadin='lazy')
+					div(class='profile__info')
+						p(class='profile__name') Francisco Gerónimo
+						p(class='profile__rol') Presidente
+
+				div(class='profile')
+					div(class='profile__image')
+						img(src="./assets/icons/favicon-transparent.png", alt="" loadin='lazy')
+					div(class='profile__info')
+						p(class='profile__name') María José Rodríguez Vázquez
+						p(class='profile__rol') Dirección de recursos
+
+			article(class='grid')
+				div(class='card')
+					div(class='card__header')
+						i(class='bx bx-heart color-primary')
+						p(class='text-medium') Amor
+					div(class='card__body')
+						p Amamos lo que hacemos, amamos formar parte del cambio.
+
+				div(class='card')
+					div(class='card__header')
+						i(class='bx bx-donate-heart color-primary')
+						p(class='text-medium') Empatía
+					div(class='card__body')
+						p Entender el sentir del prójimo es necesario para poder ayudar a otros y en tlali lo entendemos.
+
+				div(class='card')
+					div(class='card__header')
+						i(class='bx bx-line-chart color-primary')
+						p(class='text-medium') Crecimiento
+					div(class='card__body')
+						p Nuestro equipo esta en constante crecimiento y con ellos tambien tlali.
+
+				div(class='card')
+					div(class='card__header')
+						i(class='bx bx-group color-primary')
+						p(class='text-medium') Tolerancia
+					div(class='card__body')
+						p Nos encanta la diversidad que nos rodea y nos esforzamos por que se mantenga.
+
+		section(class='section' id='departaments')
+			h2 Departamentos
+			article(class='grid departaments')
+		include ./inc/footer

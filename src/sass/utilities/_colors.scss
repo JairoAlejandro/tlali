@@ -1,0 +1,14 @@
+@use '../config/colors' as *;
+
+@each $color in $colors{
+    $name: map-get($color,name);
+    $baseColor: map-get($color, color);
+
+    .bg-#{$name}{
+        background-color: var(--color-#{$name});
+    }
+
+    .color-#{$name}{
+        color: var(--color-#{$name});
+    }
+}

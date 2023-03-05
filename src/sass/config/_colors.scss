@@ -1,0 +1,38 @@
+$colors:(
+    (
+        name: primary,
+        color: #00AC8C
+    ),
+    (
+        name: secondary,
+        color: #09f
+    ),
+    (
+        name: background,
+        color: var(--color-background)
+    ),
+    (
+        name: text,
+        color: var(--color-text)
+    ),
+    (
+        name: surface,
+        color: var(--color-surface)
+    ),
+    (
+        name: dark,
+        color: #161619
+    ),
+    (
+        name: dark-surface,
+        color: #1e1e23
+    ),
+    (
+        name: light,
+        color: #f1f6ff
+    ),
+    (
+        name: light-surface,
+        color: #dde2ee
+    )
+);

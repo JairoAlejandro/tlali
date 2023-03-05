@@ -1,0 +1,76 @@
+$fonts-url: './fonts/';
+
+@font-face {
+    font-family: 'Rubik';
+    src: url($fonts-url+'Rubik/Rubik-italic.ttf');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url($fonts-url+'Rubik/Rubik.ttf');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url($fonts-url+'Outfit/Outfit.ttf');
+}
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: var(--font-sans);
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    line-height: 1;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-secondary);
+}
+
+img{
+    fill: currentColor;
+    display: block;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+button{
+    display: inline-flex;
+    line-height: 1;
+    align-items: center;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 400;
+    gap: 12px;
+    border: none;
+    color: inherit;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: var(--color-surface);
+}
+
+::selection{
+    background-color: var(--color-secondary);
+}
+
+.bx{
+    font-size: 24px;
+    color: inherit;
+}

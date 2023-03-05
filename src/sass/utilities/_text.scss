@@ -1,0 +1,68 @@
+$display-titles:(
+    (
+        name: display-1,
+        min: 24px,
+        pref: 64px,
+        max: 8vw
+    ),
+    (
+        name: display-2,
+        min: 32px,
+        pref: 64px,
+        max: 12vw
+    ),
+    (
+        name: display-3,
+        min: 32px,
+        pref: 64px,
+        max: 12vw
+    )
+);
+
+@each $title in $display-titles{
+    $name: map-get($title, name);
+    $min: map-get($title, min);
+    $pref: map-get($title, pref);
+    $max: map-get($title, max);
+
+    .#{$name}{
+        font-size: clamp(#{$min , $pref , $max});
+        font-weight: 800;
+    }
+}
+
+$text:(
+    (
+        property: font-size,
+        class: font,
+
+    ),
+    (
+        property: font-weight,
+        class: text,
+        values:(
+            thin: 100,
+            light: 200,
+            extralight: 300,
+            regular: 400,
+            medium: 500,
+            semibold: 600,
+            bold: 700,
+            extrabold: 800,
+            'black': 900
+        )
+    )
+);
+
+@each $prop in $text{
+    $property: map-get($prop, property);
+    $values: map-get($prop, values);
+    $class: map-get($prop, class);
+
+    @each $valueName, $value in $values{
+        .#{$class}-#{$valueName}{
+            #{$property}: #{$value};
+        }
+    }
+
+}

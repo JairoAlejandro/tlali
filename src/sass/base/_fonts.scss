@@ -1,0 +1,33 @@
+$fonts-url: 'http://192.168.1.73:3000/fonts/';
+
+$poppins:(
+    name: 'Poppins',
+    folder: $fonts-url+'Poppins/',
+    weights:(
+        (
+            name:'Thin',
+            weight: 100,
+            styles: (normal,italic),
+        ),
+        (
+            name:'ExtraLight',
+            weight: 200,
+            styles: (normal,italic),
+        ),
+        (
+            name:'Light',
+            weight: 300,
+            styles: (normal,italic),
+        ),
+        (
+            name:'Regular',
+            weight: 400,
+            styles: (normal,italic),
+        ),
+        (
+            name:'Medium',
+            weight: 500,
+            styles: (normal,italic),
+        )
+    )
+);
