@@ -1,0 +1,286 @@
+.logo {
+  height: 32px;
+  color: var(--color-primary);
+}
+
+:root {
+  --font-sans: "Rubik",system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Open Sans", "Helvetica Neue", sans-serif;
+  --font-serif: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", monospace, "Courier New", Courier;
+  --color-primary: #00AC8C;
+  --color-secondary: #09f;
+  --color-background: var(--color-background);
+  --color-text: var(--color-text);
+  --color-surface: var(--color-surface);
+  --color-dark: #161619;
+  --color-dark-surface: #1e1e23;
+  --color-light: #f1f6ff;
+  --color-light-surface: #dde2ee;
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 24px;
+  --spacing-lg: 48px;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/Rubik/Rubik-italic.ttf");
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/Rubik/Rubik.ttf");
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("./fonts/Outfit/Outfit.ttf");
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
+img {
+  fill: currentColor;
+  display: block;
+  width: auto;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+}
+
+button {
+  display: inline-flex;
+  line-height: 1;
+  align-items: center;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 400;
+  gap: 12px;
+  border: none;
+  color: inherit;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: var(--color-surface);
+}
+
+::-moz-selection {
+  background-color: var(--color-secondary);
+}
+
+::selection {
+  background-color: var(--color-secondary);
+}
+
+.bx {
+  font-size: 24px;
+  color: inherit;
+}
+
+.theme-dark {
+  --color-background: var(--color-dark);
+  --color-text: var(--color-light);
+  --color-surface: var(--color-dark-surface);
+}
+
+.theme-light {
+  --color-background: var(--color-light);
+  --color-text: var(--color-dark);
+  --color-surface: var(--color-light-surface);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.button {
+  display: flex;
+  gap: 12px;
+  border-radius: 8px;
+  padding: 12px;
+  color: inherit;
+  background-color: var(--color-surface);
+}
+
+.button-primary {
+  display: flex;
+  gap: 12px;
+  border-radius: 8px;
+  padding: 12px;
+  color: inherit;
+  background-color: var(--color-primary);
+}
+
+.button-secondary {
+  display: flex;
+  gap: 12px;
+  border-radius: 8px;
+  padding: 12px;
+  color: inherit;
+  background-color: var(--color-secondary);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 12px;
+  background-color: var(--color-surface);
+}
+@media (min-width: 768px) {
+  .card {
+    padding: 24px;
+  }
+}
+.card__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.display-1 {
+  font-size: clamp(24px, 64px, 8vw);
+  font-weight: 800;
+}
+
+.display-2 {
+  font-size: clamp(32px, 64px, 12vw);
+  font-weight: 800;
+}
+
+.display-3 {
+  font-size: clamp(32px, 64px, 12vw);
+  font-weight: 800;
+}
+
+.text-thin {
+  font-weight: 100;
+}
+
+.text-light {
+  font-weight: 200;
+}
+
+.text-extralight {
+  font-weight: 300;
+}
+
+.text-regular {
+  font-weight: 400;
+}
+
+.text-medium {
+  font-weight: 500;
+}
+
+.text-semibold {
+  font-weight: 600;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-extrabold {
+  font-weight: 800;
+}
+
+.text-black {
+  font-weight: 900;
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.color-secondary {
+  color: var(--color-secondary);
+}
+
+.bg-background {
+  background-color: var(--color-background);
+}
+
+.color-background {
+  color: var(--color-background);
+}
+
+.bg-text {
+  background-color: var(--color-text);
+}
+
+.color-text {
+  color: var(--color-text);
+}
+
+.bg-surface {
+  background-color: var(--color-surface);
+}
+
+.color-surface {
+  color: var(--color-surface);
+}
+
+.bg-dark {
+  background-color: var(--color-dark);
+}
+
+.color-dark {
+  color: var(--color-dark);
+}
+
+.bg-dark-surface {
+  background-color: var(--color-dark-surface);
+}
+
+.color-dark-surface {
+  color: var(--color-dark-surface);
+}
+
+.bg-light {
+  background-color: var(--color-light);
+}
+
+.color-light {
+  color: var(--color-light);
+}
+
+.bg-light-surface {
+  background-color: var(--color-light-surface);
+}
+
+.color-light-surface {
+  color: var(--color-light-surface);
+}
