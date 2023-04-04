@@ -1,149 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="shortcut icon" href="./assets/icons/favicon-transparent.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-    <link rel="stylesheet" href="./nextia.css">
-    <link rel="stylesheet" href="./layout.css">
-    <script src="./app.js"></script>
+    <link rel="shortcut icon" href="http://192.168.1.75:3000/isotipo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="http://192.168.1.75:3000/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="http://192.168.1.75:3000/nextia.css">
+    <link rel="stylesheet" href="http://192.168.1.75:3000/app.css">
+    <script src="http://192.168.1.75:3000/app.js"></script>
     <title>Tlali</title>
-  </head>
-  <body class="theme-dark">
-    <header class="header"><svg class="logo" height="36" viewBox="0 0 150 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" clip-rule="evenodd"
-        d="M16 20C11.5817 20 8 16.4183 8 12V0H12C14.3894 0 16.5341 1.04751 18 2.70835C19.4659 1.04751 21.6106 0 24 0H28V12C28 16.4183 24.4183 20 20 20H16ZM16 16C13.7909 16 12 14.2091 12 12V4C14.2091 4 16 5.79086 16 8V16ZM20 16C22.2091 16 24 14.2091 24 12V4C21.7909 4 20 5.79086 20 8V16Z"
-        fill="currentColor"/>
-    <path d="M16 24C18.2091 24 20 25.7909 20 28V36C17.7909 36 16 34.2091 16 32V24Z" fill="currentColor" />
-    <path
-        d="M0 16C2.20914 16 4 17.7909 4 20V28C4 30.2091 5.79086 32 8 32V24C10.2091 24 12 25.7909 12 28V36H8C3.58172 36 0 32.4183 0 28V16Z"
-        fill="currentColor" />
-    <path
-        d="M36 16C33.7909 16 32 17.7909 32 20V28C32 30.2091 30.2091 32 28 32V24C25.7909 24 24 25.7909 24 28V36H28C32.4183 36 36 32.4183 36 28V16Z"
-        fill="currentColor" />
-    <path d="M44 0C41.7909 0 40 1.79086 40 4H44V16H48V4C50.2092 4 52 2.20914 52 0H44Z" fill="currentColor" />
-    <path
-        d="M44 20C41.7909 20 40 21.7909 40 24V36H44V31C46.2092 31 48 29.2091 48 27H44V24H48C50.2092 24 52 22.2091 52 20H44Z"
-        fill="currentColor" />
-    <path d="M54 0H58V16H54V0Z" fill="currentColor" />
-    <path d="M78 0H74V16H78V0Z" fill="currentColor" />
-    <path fill-rule="evenodd" clip-rule="evenodd"
-        d="M69.3386 5.01386C68.3841 4.37354 67.2357 4 66 4C62.6863 4 60 6.68629 60 10C60 13.3137 62.6863 16 66 16C67.2357 16 68.3841 15.6265 69.3386 14.9861C70.0456 15.6167 70.978 16 72 16V4C70.978 4 70.0456 4.38325 69.3386 5.01386ZM68 10C68 11.1046 67.1046 12 66 12C64.8954 12 64 11.1046 64 10C64 8.89543 64.8954 8 66 8C67.1046 8 68 8.89543 68 10Z"
-        fill="currentColor" />
-    <path fill-rule="evenodd" clip-rule="evenodd"
-        d="M100 24C101.236 24 102.384 24.3735 103.339 25.0139C104.046 24.3832 104.978 24 106 24V36C104.978 36 104.046 35.6167 103.339 34.9861C102.384 35.6265 101.236 36 100 36C96.6863 36 94 33.3137 94 30C94 26.6863 96.6863 24 100 24ZM100 32C101.105 32 102 31.1046 102 30C102 28.8954 101.105 28 100 28C98.8954 28 98 28.8954 98 30C98 31.1046 98.8954 32 100 32Z"
-        fill="currentColor" />
-    <path fill-rule="evenodd" clip-rule="evenodd"
-        d="M92 20H88V24.3414C87.3744 24.1203 86.7013 24 86 24C82.6863 24 80 26.6863 80 30C80 33.3137 82.6863 36 86 36C87.2357 36 88.3841 35.6265 89.3385 34.9861C90.0456 35.6168 90.978 36 92 36V20ZM88 30C88 28.8954 87.1046 28 86 28C84.8954 28 84 28.8954 84 30C84 31.1046 84.8954 32 86 32C87.1046 32 88 31.1046 88 30Z"
-        fill="currentColor" />
-    <path
-        d="M84 2C84 3.10458 83.1046 4 82 4C80.8954 4 80 3.10458 80 2C80 0.895416 80.8954 0 82 0C83.1046 0 84 0.895416 84 2Z"
-        fill="currentColor" />
-    <path d="M84 6V16H80V6H84Z" fill="currentColor" />
-    <path
-        d="M70 30V36H66V24C67.022 24 67.9544 24.3832 68.6614 25.0139C69.6159 24.3735 70.7643 24 72 24C75.3137 24 78 26.6863 78 30V36H74V30C74 28.8954 73.1046 28 72 28C70.8954 28 70 28.8954 70 30Z"
-        fill="currentColor" />
-    <path
-        d="M56 24H52V30C52 33.3137 54.6863 36 58 36C61.3137 36 64 33.3137 64 30V24H60V30C60 31.1046 59.1046 32 58 32C56.8954 32 56 31.1046 56 30V24Z"
-        fill="currentColor" />
-    <path
-        d="M114 24C110.686 24 108 26.6863 108 30C108 33.3137 110.686 36 114 36H116V32H114C112.895 32 112 31.1046 112 30C112 28.8954 112.895 28 114 28H116V24H114Z"
-        fill="currentColor" />
-    <path
-        d="M122 22C122 23.1046 121.105 24 120 24C118.895 24 118 23.1046 118 22C118 20.8954 118.895 20 120 20C121.105 20 122 20.8954 122 22Z"
-        fill="currentColor" />
-    <path
-        d="M142 30V36H138V24C139.022 24 139.954 24.3832 140.661 25.0139C141.616 24.3735 142.764 24 144 24C147.314 24 150 26.6863 150 30V36H146V30C146 28.8954 145.105 28 144 28C142.895 28 142 28.8954 142 30Z"
-        fill="currentColor" />
-    <path d="M122 26V36H118V26H122Z" fill="currentColor" />
-    <path d="M132 18V21L128 23V20L132 18Z" fill="currentColor" />
-    <path fill-rule="evenodd" clip-rule="evenodd"
-        d="M130 36C133.314 36 136 33.3137 136 30C136 26.6863 133.314 24 130 24C126.686 24 124 26.6863 124 30C124 33.3137 126.686 36 130 36ZM130 32C131.105 32 132 31.1046 132 30C132 28.8954 131.105 28 130 28C128.895 28 128 28.8954 128 30C128 31.1046 128.895 32 130 32Z"
-        fill="currentColor" />
-</svg><i class="bx bx-menu" id="toggle-menu"></i>
-      <nav class="header__nav"><i class="bx bx-x" id="close-menu"></i><a href="#home">Inicio</a><a href="#about">Nosotros </a><a href="#departaments">Departamentos</a></nav>
-    </header>
-    <main class="section home" id="home">
-      <div class="home__content">
-        <div class="home__slider"><img class="home__image" src="./assets/images/home-image.png" alt="hero-image" loading="lazy"></div>
-        <div class="home__info">
-          <p class="display-1">Forma parte del cambio con tlali</p>
-          <p>Somos una organización social que promueve el desarrollo social , cultural y sostenible.</p>
-        </div>
-      </div>
-    </main>
-    <section class="section about" id="about">
-      <h2>Nosotros</h2>
-      <div class="about__text">
-        <p>Queremos ser la primera organización juvenil que busque la inclusión y participación de todas y todos sin importar sus capacidades.</p>
-        <p>Cualquier persona puede colaborar con nosotros mediante las actividades organizadas por nuestros distintos departamentos.</p>
-      </div>
-      <p>Únete a nosotros y sé parte del cambio que necesitamos. Juntos, podemos construir un mejor futuro para todos. Visita nuestras redes sociales y participa en las actividades que organizamos. ¡Gracias por apoyar a Tlali!.</p>
-      <div class="social"><a class="social__item" target="blank" href="https://www.instagram.com/fundacion_tlali/"><i class="bx bxl-instagram"></i></a><a class="social__item" target="blank" href="https://www.facebook.com/fundacion_tlali/"><i class="bx bxl-facebook"></i></a><a class="social__item" target="blank" href="https://www.tiktok.com/fundacion_tlali/"><i class="bx bxl-tiktok"></i></a><a class="social__item" target="blank" href="https://www.twitter.com/fundacion_tlali/"><i class="bx bxl-twitter"></i></a></div>
-      <h3>Directores</h3>
-      <article class="profiles">
-        <div class="profile">
-          <div class="profile__image"><img src="./assets/icons/favicon-transparent.png" alt="" loadin="lazy"></div>
-          <div class="profile__info">
-            <p class="profile__name">Francisco Gerónimo</p>
-            <p class="profile__rol">Presidente</p>
-          </div>
-        </div>
-        <div class="profile">
-          <div class="profile__image"><img src="./assets/icons/favicon-transparent.png" alt="" loadin="lazy"></div>
-          <div class="profile__info">
-            <p class="profile__name">María José Rodríguez Vázquez</p>
-            <p class="profile__rol">Dirección de recursos</p>
-          </div>
-        </div>
-      </article>
-      <article class="grid">
-        <div class="card">
-          <div class="card__header"><i class="bx bx-heart color-primary"></i>
-            <p class="text-medium">Amor</p>
-          </div>
-          <div class="card__body">
-            <p>Amamos lo que hacemos, amamos formar parte del cambio.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__header"><i class="bx bx-donate-heart color-primary"></i>
-            <p class="text-medium">Empatía</p>
-          </div>
-          <div class="card__body">
-            <p>Entender el sentir del prójimo es necesario para poder ayudar a otros y en tlali lo entendemos.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__header"><i class="bx bx-line-chart color-primary"></i>
-            <p class="text-medium">Crecimiento</p>
-          </div>
-          <div class="card__body">
-            <p>Nuestro equipo esta en constante crecimiento y con ellos tambien tlali.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__header"><i class="bx bx-group color-primary"></i>
-            <p class="text-medium">Tolerancia</p>
-          </div>
-          <div class="card__body">
-            <p>Nos encanta la diversidad que nos rodea y nos esforzamos por que se mantenga.</p>
-          </div>
-        </div>
-      </article>
-    </section>
-    <section class="section" id="departaments">
-      <h2>Departamentos</h2>
-      <article class="grid departaments"></article>
-    </section>
-    <footer class="footer">
-      <div class="footer__section">
-        <p>Siguenos en:</p>
-        <div class="social"><a class="social__item" target="blank" href="https://www.instagram.com/fundacion_tlali/"><i class="bx bxl-instagram"></i></a><a class="social__item" target="blank" href="https://www.facebook.com/fundacion_tlali/"><i class="bx bxl-facebook"></i></a><a class="social__item" target="blank" href="https://www.tiktok.com/fundacion_tlali/"><i class="bx bxl-tiktok"></i></a><a class="social__item" target="blank" href="https://www.twitter.com/fundacion_tlali/"><i class="bx bxl-twitter"></i></a></div>
-      </div>
-      <p>desarrollado por el departamento de marketing de<strong> tlali&copy; 2023</strong></p>
-    </footer>
-  </body>
+</head>
+<body>
+    <div id="root"></div>
+</body>
 </html>
